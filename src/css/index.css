@@ -844,7 +844,7 @@ body, html{
     }
 
     .first--slide .slide--content h1 {
-        font-size: 2em; /* 3emから2emへ縮小 */
+        font-size: 1.8em;
     }
 
     .first--slide .slide--content h2 {
@@ -856,25 +856,31 @@ body, html{
         font-size: 1em; /* 1.5emから1emへ縮小 */
     }
 
+	.second--canvas .content h2 {
+		font-size: 1.2em;
+	}
+
     .third--canvas .message h2 {
         font-size: 1.25em;
     }
 
     .third--canvas .center--line h1 {
-        font-size: 1.85em;
+        font-size: 1.7em;
     }
 
     /* 画像サイズの更なる縮小 */
     .star--bg img,
     .third--canvas > img {
-        width: 20%; /* 50%から30%へ縮小 */
+        width: 20%;
         height: auto;
     }
 
 	.third--canvas .center--line > img#bl--left{
+		width: 30%;
 		left:0%;
 	}
 	.third--canvas .center--line > img#bl--right{
+		width: 30%;
 		right:0%;
 	}
 
@@ -886,5 +892,9 @@ body, html{
 	}
 	.third--canvas > img#gf3{
 		left:60%;
+	}
+
+	.third--canvas .message h2{
+		font-size: 1em;
 	}
 }

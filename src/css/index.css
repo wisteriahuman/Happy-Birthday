@@ -834,7 +834,7 @@ body, html{
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen {
     body, html {
         font-size: 12px;
     }

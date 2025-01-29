@@ -68,7 +68,9 @@ body, html{
 	transform: scale(0) rotate(-45deg);
 }
 
-.first--slide .slide--content h2{
+/* .first--slide .slide--content h2 を .first--slide .slide--content p に変更 */
+.first--slide .slide--content p{
+	/* 既存の h2 スタイルを適用 */
 	position: relative;
 	color:#fcbb5e;
 	font-size:4em;
@@ -229,7 +231,7 @@ body, html{
 }
 
 .slide--content--one h1 , 
-.slide--content--one h2{
+.slide--content--one p{
 	position: relative;
 	line-height: 1em;
 	margin:0;
@@ -242,14 +244,17 @@ body, html{
 	animation:secondSlideTextOne 500ms ease 0s 1 forwards;
 }
 
-.slide--content--one h2.first{
+/* .slide--content--one h2 を .slide--content--one p に変更 */
+.slide--content--one p.first{
+	/* 既存の h2.first スタイルを適用 */
 	font-size: 5em;
 	transform: scale(0);
 	opacity: 0;
 	animation:secondSlideTextTwo 300ms ease 490ms 1 forwards;
 }
 
-.slide--content--one h2.second{
+.slide--content--one p.second{
+	/* 既存の h2.second スタイルを適用 */
 	font-size: 5em;
 	transform: scale(0);
 	opacity: 0;
@@ -399,12 +404,14 @@ body, html{
 	color:#fff;
 }
 
-.second--canvas .content h2{
+/* .second--canvas .content h2 を .second--canvas .content p に変更 */
+.second--canvas .content p{
+	/* 既存の h2 スタイルを適用 */
 	position: relative;
 	margin:0;
 }
 
-.second--canvas .content h2:nth-child(1){
+.second--canvas .content p:nth-child(1){
 	transform:rotate(-90deg);
 	left:-2em;
 	top:-1em;
@@ -412,13 +419,13 @@ body, html{
 	animation:secondCanvasTextOne 500ms ease 1s 1 forwards
 }
 
-.second--canvas .content h2:nth-child(2){
+.second--canvas .content p:nth-child(2){
 	transform:translateX(5em);
 	opacity: 0;
 	animation:secondCanvasTextTwo 500ms ease 1.5s 1 forwards
 }
 
-.second--canvas .content h2:nth-child(3){
+.second--canvas .content p:nth-child(3){
 	transform:rotate(90deg);
 	top:1em;
 	left:-2em;
@@ -772,7 +779,8 @@ body, html{
 	}
 }
 
-.third--canvas .message > h2{
+/* .third--canvas .message > h2 を .third--canvas .message > p に変更 */
+.third--canvas .message > p{
 	position: absolute;
 	width:auto;
 	height:auto;
@@ -784,31 +792,31 @@ body, html{
 	animation: slideInMessage 2s ease-in 12s forwards;
 }
 
-.third--canvas .message > h2#msg1 {
+.third--canvas .message > p#msg1 {
 	left: 60%;
 	top: 20%;
     animation-delay: 5800ms;
 }
 
-.third--canvas .message > h2#msg2 {
+.third--canvas .message > p#msg2 {
 	left: 5%;
 	top: 20%;
 	animation-delay: 6300ms;
 }
 
-.third--canvas .message > h2#msg3 {
+.third--canvas .message > p#msg3 {
 	left: 30%;
 	top: 5%;
 	animation-delay: 6800ms;
 }
 
-.third--canvas .message > h2#msg4 {
+.third--canvas .message > p#msg4 {
 	left: 65%;
 	top: 80%;
 	animation-delay: 7300ms;
 }
 
-.third--canvas .message > h2#msg5 {
+.third--canvas .message > p#msg5 {
 	left: 5%;
 	top: 70%;
 	animation-delay: 7800ms;
@@ -834,6 +842,12 @@ body, html{
 	}
 }
 
+/* h1 のスタイルを調整 */
+h1 {
+    font-size: 6em;
+    /* 他の既存のスタイルがある場合はそのまま */
+}
+
 @media only screen and (max-width: 600px) {
     body, html {
         font-size: 14px;
@@ -847,20 +861,52 @@ body, html{
         font-size: 3em;
     }
 
-    .first--slide .slide--content h2 {
+    .first--slide .slide--content p {
         font-size: 2em;
     }
 
     .slide--content--one h1, 
-    .slide--content--one h2 {
+    .slide--content--one p {
         font-size: 1.5em;
     }
 
-    .third--canvas .message h2 {
+    .third--canvas .message p {
         font-size: 1.2em;
     }
 
     .third--canvas .center--line h1 {
         font-size: 2em;
     }
+
+    /* 画像サイズの調整 */
+    .circle--stuff {
+        width: 300px;
+        height: 300px;
+    }
+
+    .circle--stuff svg {
+        width: 100%;
+        height: auto;
+    }
+
+    .star--bg img {
+        width: 50%;
+        height: auto;
+    }
+
+    .third--canvas .center--line img {
+        width: 50px;
+        height: auto;
+    }
+
+    .third--canvas > img {
+        width: 100px;
+    }
+
+    /* h1 のフォントサイズを小さくする */
+    h1 {
+        font-size: 3em;
+    }
+
+    /* 他の必要な調整があればここに追加 */
 }

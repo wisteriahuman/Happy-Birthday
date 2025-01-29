@@ -797,14 +797,14 @@ body, html{
 }
 
 .third--canvas .message > h2#msg3 {
-	left: 30%;
+	left: 20%;
 	top: 5%;
 	animation-delay: 6800ms;
 }
 
 .third--canvas .message > h2#msg4 {
-	left: 65%;
-	top: 80%;
+	left: 50%;
+	top: 75%;
 	animation-delay: 7300ms;
 }
 
@@ -836,31 +836,55 @@ body, html{
 
 @media only screen and (max-width: 600px) {
     body, html {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .first--slide .slide--content {
-        padding: 2em;
+        padding: 3em;
     }
 
     .first--slide .slide--content h1 {
-        font-size: 3em;
+        font-size: 2em; /* 3emから2emへ縮小 */
     }
 
     .first--slide .slide--content h2 {
-        font-size: 2em;
+        font-size: 1.8em; /* 2emから1.5emへ縮小 */
     }
 
     .slide--content--one h1, 
     .slide--content--one h2 {
-        font-size: 1.5em;
+        font-size: 1em; /* 1.5emから1emへ縮小 */
     }
 
     .third--canvas .message h2 {
-        font-size: 1.2em;
+        font-size: 1.25em;
     }
 
     .third--canvas .center--line h1 {
-        font-size: 2em;
+        font-size: 1.85em;
     }
+
+    /* 画像サイズの更なる縮小 */
+    .star--bg img,
+    .third--canvas > img {
+        width: 20%; /* 50%から30%へ縮小 */
+        height: auto;
+    }
+
+	.third--canvas .center--line > img#bl--left{
+		left:0%;
+	}
+	.third--canvas .center--line > img#bl--right{
+		right:0%;
+	}
+
+	.third--canvas > img#gf1{
+		left:20%;
+	}
+	.third--canvas > img#gf2{
+		left:40%;
+	}
+	.third--canvas > img#gf3{
+		left:60%;
+	}
 }

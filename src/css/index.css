@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Carter+One');
 
 
@@ -833,4 +832,35 @@ body, html{
 	to{
 		transform: rotate(360deg);
 	}
+}
+
+@media only screen and (max-width: 600px) {
+    body, html {
+        font-size: 14px;
+    }
+
+    .first--slide .slide--content {
+        padding: 2em;
+    }
+
+    .first--slide .slide--content h1 {
+        font-size: 3em;
+    }
+
+    .first--slide .slide--content h2 {
+        font-size: 2em;
+    }
+
+    .slide--content--one h1, 
+    .slide--content--one h2 {
+        font-size: 1.5em;
+    }
+
+    .third--canvas .message h2 {
+        font-size: 1.2em;
+    }
+
+    .third--canvas .center--line h1 {
+        font-size: 2em;
+    }
 }

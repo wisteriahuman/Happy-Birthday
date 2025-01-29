@@ -772,3 +772,65 @@ body, html{
 		height:200px;
 	}
 }
+
+.third--canvas .message > h2{
+	position: absolute;
+	width:auto;
+	height:auto;
+	text-align:center;
+	font-size: 2em;
+	color: #ffffff;
+	bottom:1em;
+	opacity: 0;
+	animation: slideInMessage 2s ease-in 12s forwards;
+}
+
+.third--canvas .message > h2#msg1 {
+	left: 60%;
+	top: 20%;
+    animation-delay: 5800ms;
+}
+
+.third--canvas .message > h2#msg2 {
+	left: 5%;
+	top: 20%;
+	animation-delay: 6300ms;
+}
+
+.third--canvas .message > h2#msg3 {
+	left: 30%;
+	top: 5%;
+	animation-delay: 6800ms;
+}
+
+.third--canvas .message > h2#msg4 {
+	left: 65%;
+	top: 80%;
+	animation-delay: 7300ms;
+}
+
+.third--canvas .message > h2#msg5 {
+	left: 5%;
+	top: 70%;
+	animation-delay: 7800ms;
+}
+
+@keyframes slideInMessage{
+	from{
+		transform:translateX(5em);
+		opacity: 0;
+	}
+	to{
+		transform:translateX(0);
+		opacity: 1
+	}
+}
+
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
